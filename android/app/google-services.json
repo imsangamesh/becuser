@@ -30,6 +30,14 @@
           }
         },
         {
+          "client_id": "369799133905-shpl2isloo3grsc92c9vi74i9eppslsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crackhead.becadmin",
+            "certificate_hash": "adc1a18484efa7d82bf02a6c799f69b678017298"
+          }
+        },
+        {
           "client_id": "369799133905-ns2tohlugmjh27pv8vaf6p6g4c86djag.apps.googleusercontent.com",
           "client_type": 3
         }
