@@ -2,6 +2,7 @@ import 'package:becuser3/constants/constants.dart';
 import 'package:becuser3/helpers/myHelper.dart';
 import 'package:becuser3/models/userModel.dart';
 import 'package:becuser3/screens/auth/profile_fill_up_screen.dart';
+import 'package:becuser3/screens/extras/developer.dart';
 import 'package:becuser3/screens/gallery/gallery.dart';
 import 'package:becuser3/screens/others/faculty.dart';
 import 'package:becuser3/themes/my_colors.dart';
@@ -224,7 +225,7 @@ class _MainDrawerState extends State<MainDrawer> {
                 ),
               ),
             ),
-            // const DeveloperContact(),
+            const DeveloperContact(),
           ],
         ),
       ),

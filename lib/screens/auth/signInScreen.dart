@@ -17,7 +17,7 @@ class SigninScreen extends StatelessWidget {
             child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('HEY THERE,  WELCOME TO '),
+            const Text('WELCOME TO '),
             Text(
               'BECUSER',
               style: kBigSizeBoldTextStyle.copyWith(shadows: [
@@ -44,24 +44,24 @@ class SigninScreen extends StatelessWidget {
                     horizontal: 10,
                   )),
             ),
-            // const SizedBox(height: 10),
-            // TextButton.icon(
-            //   label: const Text(
-            //     '  Signin anonymously  ',
-            //     style: kSmallSizeBoldTextStyle,
-            //   ),
-            //   icon: const Icon(Icons.person_rounded),
-            //   onPressed: () => GoogleAuthController.myAnonymousSignin(),
-            //   style: TextButton.styleFrom(
-            //       shape: RoundedRectangleBorder(
-            //         borderRadius: BorderRadius.circular(30),
-            //       ),
-            //       padding: const EdgeInsets.symmetric(
-            //         vertical: 7,
-            //         horizontal: 10,
-            //       )),
-            // ),
-            // const SizedBox(height: 100),
+            TextButton.icon(
+              label: const Text(
+                '  Signin anonymously  ',
+                style: kSmallSizeBoldTextStyle,
+              ),
+              icon: const Icon(Icons.person_rounded),
+              onPressed: () => GoogleAuthController.myAnonymousSignin(),
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 7,
+                  horizontal: 10,
+                ),
+              ),
+            ),
+            const SizedBox(height: 30),
           ],
         )),
       ),

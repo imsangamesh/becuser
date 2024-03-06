@@ -126,7 +126,7 @@ class GoogleAuthController {
         uid: user!.uid,
         name: 'guest',
         profilepic:
-            'https://firebasestorage.googleapis.com/v0/b/becuser-101d5.appspot.com/o/utilities%2FprofilePic.jpg?alt=media&token=ae356b94-ff13-4614-b398-ac1d0931c0c2',
+            'https://img.freepik.com/premium-psd/3d-cartoon-avatar-smiling-man_1020-5130.jpg?size=338&ext=jpg&uid=R65626931&ga=GA1.2.1025021015.1655558182&semt=sph',
         email: 'guest@gmail.com',
         phone: '',
         semester: null,
@@ -142,7 +142,11 @@ class GoogleAuthController {
     } on FirebaseAuthException catch (e) {
       MyDialogBox.defaultDialog('OOPS', e.message.toString());
     } catch (e) {
-      MyDialogBox.normalDialog();
+      if (e.toString() == 'Null check operator used on a null value') {
+        MyDialogBox.showSnackBar('Please select your email to proceed!');
+      } else {
+        MyDialogBox.normalDialog();
+      }
     }
   }
 
