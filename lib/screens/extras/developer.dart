@@ -17,11 +17,21 @@ class DeveloperContact extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'dev by:',
+                'developed by:',
                 textAlign: TextAlign.center,
               ),
               Text(
                 'Sangamesh Kyatappanavar',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+              ),
+              SizedBox(height: 12),
+              Text(
+                'managed by:',
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                'Sudeep Sajjan',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
               ),

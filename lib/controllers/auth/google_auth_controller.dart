@@ -27,21 +27,21 @@ class GoogleAuthController {
       final GoogleSignInAuthentication googleSignInAuthentication =
           await googleSignInAccount!.authentication;
 
-      // checking whether email is among the valid_users or not
-      final validUsersData =
-          await fire.collection('valid_users').doc('valid_users').get();
-      final validUsersList = validUsersData.data() == null
-          ? []
-          : validUsersData.data()!['valid_users'];
+      // // checking whether email is among the valid_users or not
+      // final validUsersData =
+      //     await fire.collection('valid_users').doc('valid_users').get();
+      // final validUsersList = validUsersData.data() == null
+      //     ? []
+      //     : validUsersData.data()!['valid_users'];
 
-      if (!validUsersList.contains(googleSignInAccount.email)) {
-        googleSignIn.signOut();
-        MyDialogBox.defaultDialog(
-          'Oops!',
-          'selected email is not authorised by college... please provide the email you\'ve given while college admission',
-        );
-        return;
-      }
+      // if (!validUsersList.contains(googleSignInAccount.email)) {
+      //   googleSignIn.signOut();
+      //   MyDialogBox.defaultDialog(
+      //     'Oops!',
+      //     'selected email is not authorised by college... please provide the email you\'ve given while college admission',
+      //   );
+      //   return;
+      // }
 
       final AuthCredential credential = GoogleAuthProvider.credential(
         accessToken: googleSignInAuthentication.accessToken,
