@@ -1,4 +1,4 @@
-package com.example.becuser3
+package com.crackhead.becuserapp
 
 import io.flutter.embedding.android.FlutterActivity
 

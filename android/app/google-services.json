@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:369799133905:android:8d30cf98363bc9830223f0",
         "android_client_info": {
-          "package_name": "com.example.becuser3"
+          "package_name": "com.crackhead.becuserapp"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "369799133905-krt6lto8akhn1it6v6mhi8eqt38u3l70.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.becuser3",
+            "package_name": "com.crackhead.becuserapp",
             "certificate_hash": "adc1a18484efa7d82bf02a6c799f69b678017298"
           }
         },
