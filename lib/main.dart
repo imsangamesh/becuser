@@ -55,6 +55,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Becuser',
       theme: ThemeData(
+        useMaterial3: false,
         primarySwatch: MyClr.myColorsToMaterial(color),
         primaryColor: MyClr.myColorsToMaterial(color),
         splashColor: MyClr.priClr100,
